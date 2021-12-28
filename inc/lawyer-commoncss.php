@@ -48,7 +48,7 @@ function lawyer_common_custom_css(){
 		$fofttwocolor			  = lawyer_opt('lawyer_fof_texttwo_color');
 
 		$bannerBtnHeaderSpanColor = $themeColor != '#ff5e13' ? $themeColor : '';
-		$footerAncDefColor 		  = lawyer_opt('lawyer_footer_widget_anchor_color') != '#9e9e9e' ? lawyer_opt('lawyer_footer_widget_anchor_color') : '';
+		$footerAncDefColor 		  = lawyer_opt('lawyer_footer_widget_anchor_color') != '#c7c7c7' ? lawyer_opt('lawyer_footer_widget_anchor_color') : '';
 		$footerAncDefHovColor 	  = $footerwanchorhovcolor != '#bababa' ? $footerwanchorhovcolor : $themeColor;
 
 		$customcss ="			
@@ -194,6 +194,10 @@ function lawyer_common_custom_css(){
 			.main_menu ul li a:hover:before, .main_menu ul.navbar-nav li a::before, .header-area .main-header-area .main-menu ul li a:hover, .header-area .main-header-area.sticky .main-menu ul li a::before {
 				color: {$menuHoverColor}	
 			}
+			.header-area .main-header-area .main-menu ul li a::before
+			{
+			   background: {$menuHoverColor};
+			}
 			.main_menu.menu_fixed .main-menu-item ul li .nav-link:not(.dropdown-item):hover
 			{
 			   color: {$menuFixedHoverColor} !important;
@@ -223,7 +227,7 @@ function lawyer_common_custom_css(){
 			{
 				color: {$footerwHeadColor}
 			}
-			.footer-area .single-footer-widget p, .footer-area .widget_lawyer_newsletter .input-group input, .footer-area .copyright_part_text p, .footer_Part .copyright_part p, .footer-area .footer_2 .social_icon a, .footer_Part .footer_text h2, .footer-area .single-footer-widget .office-location ul li p, .footer .footer_top .footer_widget p, .footer .footer_top .footer_widget .newsletter_text, .footer .copy-right_text .copy_right, .footer_area .copyright_text p, .footer_area .footer_widget .offer_text, .footer_area .footer-bottom .copyright .footer-text, .footer-area .single-footer-widget h2, .footer .footer_top .footer_header p, .footer .footer_copy_right p
+			.footer-area .single-footer-widget p, .footer-area .widget_lawyer_newsletter .input-group input, .footer-area .copyright_part_text p, .footer_Part .copyright_part p, .footer-area .footer_2 .social_icon a, .footer_Part .footer_text h2, .footer-area .single-footer-widget .office-location ul li p, .footer .footer_top .footer_widget p, .footer .footer_top .footer_widget p.footer_text, .footer .footer_top .footer_widget .newsletter_text, .footer .copy-right_text .copy_right, .footer_area .copyright_text p, .footer_area .footer_widget .offer_text, .footer_area .footer-bottom .copyright .footer-text, .footer-area .single-footer-widget h2, .footer .footer_top .footer_header p, .footer .footer_copy_right p
 			{
 				color: {$footerwTextColor}
 			}

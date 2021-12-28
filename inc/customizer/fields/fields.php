@@ -14,102 +14,17 @@
  ***********************************/
 
  // Theme color field
-Epsilon_Customizer::add_field(
-    'lawyer_theme_color',
-    array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Theme Color', 'lawyer' ),
-        'description' => esc_html__( 'Select the theme color.', 'lawyer' ),
-        'sanitize_callback' => 'sanitize_text_field',
-        'section'     => 'lawyer_general_section',
-        'default'     => '#131313',
-    )
-);
-
-// Header Top sections
-Epsilon_Customizer::add_field(
-    'header_color_section',
-    array(
-        'type'        => 'epsilon-separator',
-        'label'       => esc_html__( 'Header Top Section', 'lawyer' ),
-        'section'     => 'lawyer_header_section',
-
-    )
-);
-
-// Header top email
-Epsilon_Customizer::add_field(
-    'lawyer_header_top_email',
-    array(
-        'type'        => 'text',
-        'label'       => esc_html__( 'Header Top Email', 'lawyer' ),
-        'section'     => 'lawyer_header_section',
-        'sanitize_callback' => 'sanitize_text_field',
-        'default'     => esc_html__( 'info@lawyer.com', 'lawyer' ),
-    )
-);
-
-// Header top phone number
-Epsilon_Customizer::add_field(
-    'lawyer_header_top_phone',
-    array(
-        'type'        => 'text',
-        'label'       => esc_html__( 'Header Top Phone Number', 'lawyer' ),
-        'section'     => 'lawyer_header_section',
-        'sanitize_callback' => 'sanitize_text_field',
-        'default'     => esc_html__( '160160', 'lawyer' ),
-    )
-);
-
-// Header button label
-Epsilon_Customizer::add_field(
-    'lawyer_header_btn_text',
-    array(
-        'type'        => 'text',
-        'label'       => esc_html__( 'Header Button Text', 'lawyer' ),
-        'section'     => 'lawyer_header_section',
-        'sanitize_callback' => 'sanitize_text_field',
-        'default'     => esc_html__( 'Make an Appointment', 'lawyer' ),
-    )
-);
-
-// Header button URL
-Epsilon_Customizer::add_field(
-    'lawyer_header_btn_url',
-    array(
-        'type'        => 'text',
-        'label'       => esc_html__( 'Header Button URL', 'lawyer' ),
-        'section'     => 'lawyer_header_section',
-        'sanitize_callback' => 'sanitize_text_field',
-        'default'     => esc_html__( '#', 'lawyer' ),
-    )
-);
-
-// Header call button bg color
-Epsilon_Customizer::add_field(
-    'lawyer_book_btn_color',
-    array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Button Color', 'lawyer' ),
-        'description' => esc_html__( 'Select the color.', 'lawyer' ),
-        'sanitize_callback' => 'sanitize_text_field',
-        'section'     => 'lawyer_header_section',
-        'default'     => '#131313',
-    )
-);
-
-// Header book button hover bg color
-Epsilon_Customizer::add_field(
-    'lawyer_book_btn_hvr_bg_color',
-    array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Button Hover Bg Color', 'lawyer' ),
-        'description' => esc_html__( 'Select the color.', 'lawyer' ),
-        'sanitize_callback' => 'sanitize_text_field',
-        'section'     => 'lawyer_header_section',
-        'default'     => '#131313',
-    )
-);
+// Epsilon_Customizer::add_field(
+//     'lawyer_theme_color',
+//     array(
+//         'type'        => 'epsilon-color-picker',
+//         'label'       => esc_html__( 'Theme Color', 'lawyer' ),
+//         'description' => esc_html__( 'Select the theme color.', 'lawyer' ),
+//         'sanitize_callback' => 'sanitize_text_field',
+//         'section'     => 'lawyer_general_section',
+//         'default'     => '#131313',
+//     )
+// );
 
 // Header color sections
 Epsilon_Customizer::add_field(
@@ -352,7 +267,7 @@ Epsilon_Customizer::add_field(
         'label'             => esc_html__( 'Footer short text', 'lawyer' ),
         'section'           => 'lawyer_footer_section',
         'sanitize_callback' => 'sanitize_text_field',
-        'default'           => '200, A-block, Green road, USA <br>+10 367 267 2678 <br><a class="domain" href="#">lawyer@contact.com</a>',
+        'default'           => '200, A-block, Green road, USA <br> +10 367 267 2678 <br> <a class="domain" href="#">lawyer@contact.com</a>',
     )
 );
 
@@ -450,7 +365,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Widget Bg Color', 'lawyer' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'lawyer_footer_section',
-        'default'     => '#1f1b1b',
+        'default'     => '#202020',
     )
 );
 
@@ -474,7 +389,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Text Color', 'lawyer' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'lawyer_footer_section',
-        'default'     => '#a3a3a3',
+        'default'     => '#c7c7c7',
     )
 );
 
@@ -486,7 +401,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Anchor Color', 'lawyer' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'lawyer_footer_section',
-        'default'     => '#9e9e9e',
+        'default'     => '#c7c7c7',
     )
 );
 
@@ -498,7 +413,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'lawyer' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'lawyer_footer_section',
-        'default'     => '#ffffff',
+        'default'     => '#F2C64D',
     )
 );
 

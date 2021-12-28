@@ -14,11 +14,11 @@ if( !defined( 'ABSPATH' ) ){
 $headerimg          = get_header_image();
 ?>
 
-<section class="hero-banner zigzag_bg_2" <?php echo lawyer_inline_bg_img( esc_url( $headerimg ) ); ?>>
+<section class="hero-banner zigzag_bg_2 d-flex align-items-center" <?php echo lawyer_inline_bg_img( esc_url( $headerimg ) ); ?>>
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="breadcrumb_tittle">
-                <h2>
+        <div class="row">
+            <div class="col-xl-12">
+                <h2 class="text-center">
                     <?php
                     if ( is_category() ) {
                         single_cat_title( __('Category: ', 'lawyer') );
@@ -47,12 +47,6 @@ $headerimg          = get_header_image();
                     }
                     ?>
                 </h2>
-
-                <?php
-                    if ( function_exists( 'lawyer_breadcrumbs' ) ) {
-                        lawyer_breadcrumbs();
-                    }
-                ?>
             </div>
         </div>
     </div>

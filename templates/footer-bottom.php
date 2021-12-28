@@ -16,25 +16,3 @@
 			</div>
 		</div>
 	</div>
-
-	<script>
-		(function ($) {
-			$('#datepicker').datepicker({
-				iconsLibrary: 'fontawesome',
-				// disableDaysOfWeek: [0, 0],
-				//     icons: {
-				//      rightIcon: '<span class="fa fa-caret-down"></span>'
-				//  }
-			});
-			$('#datepicker2').datepicker({
-				iconsLibrary: 'fontawesome',
-				icons: {
-				rightIcon: '<span class="fa fa-caret-down"></span>'
-			}
-
-			});
-			var timepicker = $('#timepicker').timepicker({
-				format: 'HH.MM'
-			});
-		})(jQuery);	
-	</script>

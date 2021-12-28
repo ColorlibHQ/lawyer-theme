@@ -39,14 +39,14 @@ $sections = array(
     /**
      * General Section
      */
-    array(
-        'id'   => 'lawyer_general_section',
-        'args' => array(
-            'title'    => esc_html__( 'General', 'lawyer' ),
-            'panel'    => 'lawyer_theme_options_panel',
-            'priority' => 1,
-        ),
-    ),
+    // array(
+    //     'id'   => 'lawyer_general_section',
+    //     'args' => array(
+    //         'title'    => esc_html__( 'General', 'lawyer' ),
+    //         'panel'    => 'lawyer_theme_options_panel',
+    //         'priority' => 1,
+    //     ),
+    // ),
 
     /**
      * Social Profiles Section
